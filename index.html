@@ -12,12 +12,14 @@
 .benefits{background:#1c1c1a;color:#fff;border-top:1px solid #ffffff20}.benefits .wrap{display:grid;grid-template-columns:repeat(3,1fr)}.benefit{min-height:75px;display:flex;align-items:center;justify-content:center;gap:12px;font-size:13px;font-weight:800;padding:10px}.benefit+.benefit{border-left:1px solid #ffffff20}.benefit svg{color:var(--yellow);flex:none}.benefit small{display:block;color:#bcbcb7;font-size:11px;font-weight:400;margin-top:2px}
 .catalog{padding:58px 0 70px;scroll-margin-top:12px}.heading{display:flex;justify-content:space-between;align-items:end;gap:16px;margin-bottom:20px}.heading h2,.wholesale h2{font:900 clamp(43px,6.1vw,84px)/.95 var(--display);letter-spacing:-.076em;text-transform:uppercase;margin:0}.heading .eyebrow{margin-bottom:12px}.heading>p{margin:0;color:var(--muted);font-size:12px}.filters{display:flex;flex-wrap:wrap;gap:7px;border-top:1px solid var(--line);padding-top:15px;margin-bottom:17px}.filter{padding:8px 13px;border:1px solid var(--line);background:transparent;color:var(--ink);font-size:12px;font-weight:700}.filter[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}.filter:hover:not([aria-pressed="true"]){border-color:#666}.products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}.product{border:1px solid var(--line);min-width:0;background:#fff;display:flex;flex-direction:column}.product-art{height:clamp(150px,17vw,235px);position:relative;overflow:hidden;display:grid;place-items:center;background:radial-gradient(ellipse at 57% 72%,#dddad0,#eeece3 70%);border-bottom:1px solid var(--line)}.product-art::before{content:"";position:absolute;inset:-15%;background:repeating-linear-gradient(126deg,transparent 0 54px,#fff5 55px 56px,transparent 57px 71px)}.product-art svg{width:100%;height:100%;max-height:236px;position:relative;transition:transform .25s ease}.product:hover .product-art svg{transform:scale(1.05)}.size{position:absolute;top:10px;left:10px;z-index:1;background:#fff;color:#151515;font-size:10px;font-weight:800;letter-spacing:.05em;padding:5px 7px}.product-body{padding:15px;display:flex;flex-direction:column;flex:1}.product-type{font-size:9px;font-weight:900;letter-spacing:.14em;color:var(--muted);text-transform:uppercase;margin:0 0 5px}.product h3{font:800 20px/1.12 var(--display);letter-spacing:-.035em;margin:0 0 5px}.product-desc{font-size:12px;color:var(--muted);margin:0 0 12px}.product-buy{display:flex;justify-content:space-between;align-items:center;gap:5px;margin-top:auto}.product-buy strong{font-size:17px;white-space:nowrap}.add{background:var(--yellow);color:#111;border:0;min-height:42px;min-width:42px;font-size:22px;font-weight:800}.add:hover{background:#111;color:#fff}
 .wholesale{background:var(--yellow);border-top:1px solid #111;padding:48px 0;scroll-margin-top:10px}.wholesale-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:46px}.wholesale p:not(.eyebrow){max-width:480px;margin:15px 0 21px}.tiers{width:100%;border-collapse:collapse;font-size:14px}.tiers caption{text-align:left;font-size:10px;font-weight:900;letter-spacing:.16em;padding-bottom:10px}.tiers th,.tiers td{text-align:left;padding:11px 6px;border-bottom:1px solid #0004}.tiers td:last-child,.tiers th:last-child{text-align:right}.tiers th{font-size:12px}.tiers tbody tr:last-child td{border-bottom:0}
-.footer{background:#111;color:#fff;padding:36px 0 23px}.footer-grid{display:flex;align-items:flex-start;justify-content:space-between;gap:20px}.footer p{color:#bfbfba;font-size:12px;margin:9px 0}.footer-links{display:flex;gap:20px;font-size:13px;font-weight:700}.footer-links a:hover{color:var(--yellow)}.footer .fine{margin-top:23px;border-top:1px solid #ffffff26;padding-top:13px}.float{position:fixed;bottom:19px;right:19px;z-index:2;background:var(--yellow);color:#111;display:grid;place-items:center;width:52px;height:52px;border:1px solid #111;border-radius:50%;box-shadow:0 5px 20px #0003}.float:hover{background:#fff}.toast{position:fixed;bottom:22px;right:82px;z-index:3;background:#111;color:#fff;padding:10px 13px;font-size:12px;font-weight:700;box-shadow:0 4px 16px #0004}.toast[hidden]{display:none}
+.footer{background:#111;color:#fff;padding:36px 0 23px}.footer-grid{display:flex;align-items:flex-start;justify-content:space-between;gap:20px}.footer p{color:#bfbfba;font-size:12px;margin:9px 0}.footer-links{display:flex;gap:20px;font-size:13px;font-weight:700}.footer-links a:hover{color:var(--yellow)}.footer .fine{margin-top:23px;border-top:1px solid #ffffff26;padding-top:13px}.float{position:fixed;bottom:19px;right:19px;z-index:2;background:var(--yellow);color:#111;display:grid;place-items:center;width:52px;height:52px;border:1px solid #111;border-radius:50%;box-shadow:0 5px 20px #0003}.float:hover{background:#fff}
 dialog{padding:0;border:0;color:#111;background:#fff;max-height:100dvh}dialog::backdrop{background:#0009}.drawer{margin:0 0 0 auto;width:min(100%,475px);height:100%;max-width:none;box-shadow:-12px 0 50px #0004}.drawer[open]{display:flex;flex-direction:column}.drawer header,.contact header{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:19px 21px;border-bottom:1px solid var(--line)}.drawer h2,.contact h2{font:800 26px/1 var(--display);letter-spacing:-.045em;margin:0}.close{background:#f3f2ed;border:0;color:#111;width:40px;height:40px;font-size:24px}.drawer-content{padding:0 21px 22px;overflow:auto;overscroll-behavior:contain}.cart-list{list-style:none;margin:0;padding:0}.cart-item{display:grid;grid-template-columns:1fr auto;gap:10px;padding:14px 0;border-bottom:1px solid var(--line)}.cart-item strong{display:block;font-size:14px}.cart-item small,.hint{color:var(--muted);font-size:12px}.qty{display:flex;align-items:center;gap:7px}.qty button{background:#f3f2ed;border:0;color:#111;min-width:34px;min-height:36px;font-weight:800}.qty span{font-size:12px;min-width:14px;text-align:center}.empty{color:var(--muted);padding:16px 0}.shipping{margin:19px 0 12px}.shipping label,.payments legend{display:block;font-size:13px;font-weight:800;margin-bottom:7px}.shipping-row{display:flex;gap:7px}.shipping input{width:100%;min-width:0;border:1px solid #aaa;padding:9px}.shipping .btn{min-height:40px}.hint{margin:7px 0}.error{color:#a22316}.totals{margin:14px 0;border-block:1px solid var(--line);padding:9px 0}.totals div{display:flex;justify-content:space-between;gap:8px;padding:3px 0;font-size:13px}.totals div:last-child{font-weight:900;font-size:17px;padding-top:7px}.totals dd{margin:0}.payments{border:0;margin:0;padding:0}.payments label{display:flex;align-items:center;gap:8px;border:1px solid var(--line);margin-bottom:7px;padding:9px;font-size:13px;cursor:pointer}.payments input{accent-color:#111}.checkout{width:100%;margin-top:7px}.result{padding:12px;background:#fff5bd;font-size:13px;margin:10px 0 0}.contact{width:min(calc(100% - 30px),430px)}.contact-body{padding:0 21px 21px}.contact-body p{font-size:14px;color:var(--muted)}
 @media(max-width:1000px){.wrap{width:calc(100% - 56px)}.hero-content{min-height:480px}.products{grid-template-columns:repeat(3,minmax(0,1fr))}.hero-art{width:73%}.hero-index{right:28px}}
-@media(max-width:680px){.wrap{width:calc(100% - 32px)}.top{font-size:9px;letter-spacing:.09em}.nav{height:60px;gap:8px}.logo{font-size:22px}.navlinks{display:none}.bag{padding:7px 9px}.hero-art{top:auto;bottom:0;width:100%;height:57%;background-position:78% 61%}.hero::after{background:linear-gradient(180deg,#121212 40%,#121212bc 52%,#12121200 67%,#12121222 86%,#121212 100%)}.hero-content{min-height:610px;justify-content:flex-start;padding-block:36px 0}.hero h1{font-size:clamp(55px,14vw,85px)}.hero-copy{font-size:14px;margin:18px 0;max-width:290px}.hero .btn{min-height:42px;padding:8px 11px;font-size:12px}.hero-index{right:16px;bottom:12px;font-size:8px}.benefit{min-height:60px;font-size:10px;gap:5px;padding:7px 2px}.benefit small{display:none}.benefit svg{width:16px}.catalog{padding:36px 0 42px}.heading{align-items:flex-start;flex-direction:column;gap:7px;margin-bottom:12px}.heading .eyebrow{margin-bottom:7px}.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.product-art{height:clamp(134px,42vw,210px)}.product-body{padding:9px}.product h3{font-size:16px}.product-desc{font-size:11px}.product-buy strong{font-size:15px}.add{min-width:36px;min-height:36px}.wholesale{padding:33px 0}.wholesale-grid{grid-template-columns:1fr;gap:25px}.footer-grid{flex-direction:column}.float{width:44px;height:44px;bottom:12px;right:12px}.toast{bottom:15px;right:65px}}
+@media(max-width:680px){.wrap{width:calc(100% - 32px)}.top{font-size:9px;letter-spacing:.09em}.nav{height:60px;gap:8px}.logo{font-size:22px}.navlinks{display:none}.bag{padding:7px 9px}.hero-art{top:auto;bottom:0;width:100%;height:57%;background-position:78% 61%}.hero::after{background:linear-gradient(180deg,#121212 40%,#121212bc 52%,#12121200 67%,#12121222 86%,#121212 100%)}.hero-content{min-height:610px;justify-content:flex-start;padding-block:36px 0}.hero h1{font-size:clamp(55px,14vw,85px)}.hero-copy{font-size:14px;margin:18px 0;max-width:290px}.hero .btn{min-height:42px;padding:8px 11px;font-size:12px}.hero-index{right:16px;bottom:12px;font-size:8px}.benefit{min-height:60px;font-size:10px;gap:5px;padding:7px 2px}.benefit small{display:none}.benefit svg{width:16px}.catalog{padding:36px 0 42px}.heading{align-items:flex-start;flex-direction:column;gap:7px;margin-bottom:12px}.heading .eyebrow{margin-bottom:7px}.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.product-art{height:clamp(134px,42vw,210px)}.product-body{padding:9px}.product h3{font-size:16px}.product-desc{font-size:11px}.product-buy strong{font-size:15px}.add{min-width:36px;min-height:36px}.wholesale{padding:33px 0}.wholesale-grid{grid-template-columns:1fr;gap:25px}.footer-grid{flex-direction:column}.float{width:44px;height:44px;bottom:12px;right:12px}}
 @media(max-width:365px){.bag-label{display:none}.benefit{gap:3px}.product-buy strong{font-size:13px}.hero-content{min-height:570px}}
 [hidden]{display:none!important}.checkout-step{padding-top:18px}.checkout-step h3{font:800 23px/1.1 var(--display);letter-spacing:-.04em;margin:0 0 8px}.checkout-note{font-size:13px;color:var(--muted);margin:0 0 12px}.back{display:inline-block;color:#111;background:none;border:0;text-decoration:underline;padding:4px 0;margin-bottom:12px;font-size:13px;font-weight:700}.sample{margin:0 0 13px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:10px}.fields label{display:flex;flex-direction:column;gap:4px;min-width:0;font-size:12px;font-weight:700}.fields .wide{grid-column:1/-1}.fields input{padding:9px;border:1px solid #aaa;min-width:0;font-size:16px}.summary{margin:15px 0 8px;padding:12px;background:#f4f2e9;font-size:13px}.summary strong{display:block;margin-bottom:4px}.order-banner{background:var(--yellow);padding:15px;margin-bottom:14px}.order-banner strong{font-size:16px}.order-banner p{margin:5px 0 0;font-size:13px}.order-lines{padding-left:19px;margin-block:10px 15px;font-size:13px}.order-lines li+li{margin-top:5px}
+.product-qty{display:flex;align-items:center;align-self:flex-end;flex:none}.product-qty.has-quantity{outline:1px solid #e6d993;background:#fff8d8}.product-qty output{display:grid;place-items:center;min-width:29px;padding-inline:3px;font-size:14px;font-weight:800;font-variant-numeric:tabular-nums}.product-qty .subtract{background:transparent;font-size:19px}.product-qty .subtract:hover{background:#111;color:#fff}
+@media(max-width:420px){.product-buy{flex-direction:column;align-items:flex-start;gap:8px}.product-qty output{min-width:27px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
 </style>
 </head>
@@ -90,7 +92,6 @@ dialog{padding:0;border:0;color:#111;background:#fff;max-height:100dvh}dialog::b
   </div>
 </footer>
 <button class="float contact-trigger" type="button" aria-label="WhatsApp"><svg width="23" height="23" aria-hidden="true"><use href="#chat"/></svg></button>
-<div class="toast" role="status" id="toast" hidden></div>
 <dialog class="drawer" id="cart" aria-labelledby="cart-title">
   <header><h2 id="cart-title">Tu carrito</h2><form method="dialog"><button class="close" aria-label="Cerrar carrito">×</button></form></header>
   <div class="drawer-content" id="drawer-content">
@@ -166,7 +167,6 @@ const money = amount => "$ " + new Intl.NumberFormat("es-AR").format(amount);
 const cartStorageKey = "fullbrillo-demo-cart-v1";
 const cart = restoreCart();
 let shipping = null;
-let toastTimer;
 const steps = {"cart-step":"Tu carrito", "delivery-step":"Finalizar compra", "confirmation-step":"Confirmación"};
 const paymentOptions = {
   "Mercado Pago": {
@@ -238,8 +238,27 @@ function renderProducts(filter) {
   byId("products").innerHTML = visible.map(product => `<article class="product">
     <div class="product-art"><span class="size">${product.size}</span>${artwork(product)}</div>
     <div class="product-body"><p class="product-type">${categories[product.category]}</p><h3>${product.name}</h3><p class="product-desc">${product.description}</p>
-    <div class="product-buy"><strong>${money(product.price)}</strong><button class="add" type="button" data-add="${product.id}" aria-label="Agregar ${product.name}, ${product.size}">+</button></div></div>
+    <div class="product-buy"><strong>${money(product.price)}</strong>
+      <div class="product-qty" data-product="${product.id}" role="group" aria-label="Cantidad de ${product.name}, ${product.size}">
+        <button class="add subtract" type="button" data-step="-1" aria-label="Quitar una unidad de ${product.name}, ${product.size}" hidden>−</button>
+        <output aria-label="Unidades en el carrito" hidden></output>
+        <button class="add" type="button" data-step="1" aria-label="Agregar ${product.name}, ${product.size}">+</button>
+      </div>
+    </div></div>
   </article>`).join("");
+  syncCatalogQuantities();
+}
+
+function syncCatalogQuantities() {
+  byId("products").querySelectorAll("[data-product]").forEach(control => {
+    const quantity = cart.get(control.dataset.product) ?? 0;
+    const output = control.querySelector("output");
+    const inCart = quantity > 0;
+    control.classList.toggle("has-quantity", inCart);
+    control.querySelector(".subtract").hidden = !inCart;
+    output.hidden = !inCart;
+    if (output.textContent !== String(quantity)) output.textContent = quantity;
+  });
 }
 
 function discount(quantity) {
@@ -271,6 +290,7 @@ function renderCart() {
     return `<li class="cart-item"><div><strong>${product.name}</strong><small>${product.size} · ${money(unit)} c/u${percent ? ` · Mayorista −${percent}%` : ""}</small></div>
       <div class="qty"><button type="button" data-id="${id}" data-step="-1" aria-label="Quitar una unidad de ${product.name}, ${product.size}">−</button><span>${quantity}</span><button type="button" data-id="${id}" data-step="1" aria-label="Sumar una unidad de ${product.name}, ${product.size}">+</button></div></li>`;
   }).join("");
+  syncCatalogQuantities();
   renderTotals();
 }
 
@@ -280,14 +300,6 @@ function changeQuantity(id, step) {
   else cart.delete(id);
   saveCart();
   renderCart();
-}
-
-function showToast(message) {
-  const toast = byId("toast");
-  clearTimeout(toastTimer);
-  toast.textContent = message;
-  toast.hidden = false;
-  toastTimer = setTimeout(() => { toast.hidden = true; }, 2500);
 }
 
 function resetQuote() {
@@ -302,10 +314,11 @@ document.querySelector(".filters").addEventListener("click", event => {
   renderProducts(button.dataset.filter);
 });
 byId("products").addEventListener("click", event => {
-  const button = event.target.closest("[data-add]");
+  const button = event.target.closest("[data-step]");
   if (!button) return;
-  changeQuantity(button.dataset.add, 1);
-  showToast("Producto agregado al carrito");
+  const control = button.closest("[data-product]");
+  changeQuantity(control.dataset.product, Number(button.dataset.step));
+  if (button.hidden) control.querySelector('[data-step="1"]').focus({preventScroll:true});
 });
 byId("cart-list").addEventListener("click", event => {
   const button = event.target.closest("[data-step]");
