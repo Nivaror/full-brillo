@@ -21,6 +21,98 @@ dialog{padding:0;border:0;color:#111;background:#fff;max-height:100dvh}dialog::b
 .product-qty{display:flex;align-items:center;align-self:flex-end;flex:none}.product-qty.has-quantity{outline:1px solid #e6d993;background:#fff8d8}.product-qty output{display:grid;place-items:center;min-width:29px;padding-inline:3px;font-size:14px;font-weight:800;font-variant-numeric:tabular-nums}.product-qty .subtract{background:transparent;font-size:19px}.product-qty .subtract:hover{background:#111;color:#fff}
 @media(max-width:420px){.product-buy{flex-direction:column;align-items:flex-start;gap:8px}.product-qty output{min-width:27px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+
+/* Páginas de la tienda */
+.page-section{padding-block:25px 64px;min-height:62vh}
+.breadcrumb{display:flex;align-items:center;gap:9px;font-size:11px;color:var(--muted);margin:0 0 30px;flex-wrap:wrap}
+.breadcrumb a:hover{text-decoration:underline}
+.page-title{font:900 clamp(44px,6.2vw,88px)/.95 var(--display);letter-spacing:-.065em;margin:0}
+main h1[tabindex="-1"]:focus{outline:none}
+.wholesale-hero .page-title{font-size:clamp(40px,5.1vw,72px)}
+.page-intro{font-size:15px;line-height:1.6;color:var(--muted);max-width:650px;margin:18px 0 28px}
+.text-link{font-size:13px;font-weight:800;text-decoration:underline;text-underline-offset:4px}
+.navlinks a{padding-block:11px;border-bottom:2px solid transparent}
+.navlinks a[aria-current="page"]{color:var(--yellow);border-bottom-color:var(--yellow)}
+.hero-content{min-height:445px}.hero h1{font-size:clamp(58px,7.9vw,112px)}
+.heading h2{font-size:clamp(37px,4.6vw,63px)}
+.product-art-link{display:block}.product h3 a:hover{text-decoration:underline;text-underline-offset:3px}
+.product-link{color:var(--muted);font-size:11px;text-decoration:underline;display:inline-block;margin-bottom:13px}
+.shop-shortcuts{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px}
+.shop-shortcuts a{display:flex;flex-direction:column;gap:12px;background:#e9e7dc;border:1px solid var(--line);padding:24px;position:relative;overflow:hidden}
+.shop-shortcuts a::after{content:"↗";position:absolute;right:23px;top:25px;font-size:25px}
+.shop-shortcuts a:hover{background:#ffed91}
+.shop-shortcuts span{font-size:10px;letter-spacing:.1em;font-weight:700}
+.shop-shortcuts strong{font:800 34px/1.1 var(--display);letter-spacing:-.04em}
+.catalog-bottom{display:flex;justify-content:space-between;align-items:center;gap:15px;background:#e9e7dc;border-left:4px solid var(--yellow);padding:22px;margin-top:30px}
+.catalog-bottom span{font-size:13px}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr}.footer-links{flex-direction:column;gap:10px}
+.footer-heading{color:#9e9e96;font-size:9px;letter-spacing:.14em;margin:0 0 3px;text-transform:uppercase}
+.wholesale-hero{background:var(--yellow);padding:25px 0 34px}.wholesale-hero .page-intro{color:#333;margin-bottom:24px}
+.wholesale-steps{display:flex;gap:30px;flex-wrap:wrap;font-size:12px;font-weight:700}
+.wholesale-steps b{background:#111;color:var(--yellow);padding:5px 6px;font-size:10px;margin-right:6px}
+.wholesale-layout{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:24px;align-items:start;padding-block:30px 65px}
+.wholesale-rules{border:1px solid var(--line);padding:17px 20px;margin-bottom:15px;background:#ebe9df}
+.wholesale-rules strong{font-size:12px}.wholesale-rules p{font-size:12px;color:var(--muted);margin:6px 0 0}
+.bulk-list{display:grid;gap:12px}
+.bulk-row{background:#fff;border:1px solid var(--line);padding:19px;display:grid;grid-template-columns:88px minmax(0,1fr);gap:15px}
+.bulk-art{background:#eae8df;height:106px}.bulk-art svg{width:100%;height:100%}
+.bulk-heading{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.bulk-heading h2{font:800 20px/1.1 var(--display);letter-spacing:-.025em;margin:0 0 5px}
+.bulk-heading h2 a:hover{text-decoration:underline}.bulk-heading p{margin:0;font-size:11px;color:var(--muted)}
+.bulk-unit{font-size:17px;font-weight:800;white-space:nowrap}.bulk-unit small{display:block;font-size:10px;color:var(--muted);text-align:right;font-weight:400}
+.bulk-tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin-block:14px}
+.bulk-tier{border:1px solid var(--line);padding:7px 8px;font-size:10px;color:var(--muted)}
+.bulk-tier strong{display:block;color:var(--ink);font-size:12px;margin-top:3px}
+.bulk-tier.active{background:#fff5c2;border-color:#d3ae00}
+.bulk-quantity-row{display:flex;justify-content:space-between;gap:12px;align-items:center}
+.bulk-quantity-row>div:first-child{font-size:11px;color:var(--muted);max-width:290px}
+.bulk-quantity{display:flex;align-items:center;border:1px solid #d6c667;background:#fff8d8}
+.bulk-quantity button{min-width:36px;min-height:36px;background:var(--yellow);border:0;font-size:18px;font-weight:800}
+.bulk-quantity input{border:0;width:46px;min-width:0;background:transparent;text-align:center;font-size:14px;font-weight:700;appearance:textfield;-moz-appearance:textfield}
+.bulk-quantity input::-webkit-inner-spin-button,.bulk-quantity input::-webkit-outer-spin-button{appearance:none;margin:0}
+.bulk-summary{position:sticky;top:20px;background:#111;color:#fff;padding:24px}
+.bulk-summary h2{font:800 27px/1.1 var(--display);letter-spacing:-.035em;margin:0}
+.bulk-summary .eyebrow{color:var(--yellow)}.bulk-summary .hint,.bulk-empty{color:#bcbcb2}
+.bulk-summary .totals{border-color:#ffffff30}.bulk-summary .totals div{font-size:12px}
+.bulk-summary .totals div:last-child{font-size:15px}
+.bulk-summary .saving{color:var(--yellow)}.bulk-empty{font-size:13px;margin:25px 0}
+.bulk-mobilebar{display:none}
+.bulk-items{padding:0;list-style:none;font-size:12px;margin-block:20px}
+.bulk-items li{display:flex;justify-content:space-between;gap:8px;padding:8px 0;border-bottom:1px solid #ffffff20}
+.bulk-items small{display:block;color:#bcbcb2;font-size:10px;margin-top:3px}.bulk-items strong{white-space:nowrap;font-size:11px}
+.product-detail{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:start}
+.detail-art{background:radial-gradient(ellipse at 57% 72%,#dddad0,#eeece3 70%);min-height:420px;display:grid;place-items:center}
+.detail-art svg{width:100%;max-width:520px;height:100%;min-height:400px}
+.detail-info .page-title{font-size:clamp(35px,4.2vw,58px)}
+.detail-info .product-qty .add{min-width:44px;min-height:44px}.detail-info .product-qty output{font-size:16px;min-width:36px}
+.variant-label{font-size:12px;font-weight:800;margin:24px 0 10px}
+.variant-options{display:flex;gap:7px;flex-wrap:wrap}
+.variant-options a{border:1px solid #aaa;padding:9px 16px;font-size:13px;font-weight:700}
+.variant-options a[aria-current="true"]{border-color:#111;background:#111;color:#fff}
+.detail-price{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-top:24px}
+.detail-price>strong{font-size:27px}.detail-facts{margin:27px 0}
+.detail-facts div{display:flex;justify-content:space-between;font-size:12px;border-top:1px solid var(--line);padding:10px 0}
+.detail-facts dd{margin:0}.detail-actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:25px}
+.contact-options{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:35px}
+.contact-option{background:var(--yellow);padding:35px;display:flex;flex-direction:column;align-items:flex-start}
+.contact-option.dark{background:#111;color:#fff}
+.contact-option h2{font:800 clamp(28px,3vw,42px)/1.05 var(--display);letter-spacing:-.045em;margin:18px 0 10px;max-width:360px}
+.contact-option p{font-size:14px;max-width:350px;margin:0 0 25px}.contact-option .btn{margin-top:auto}.contact-option small{font-size:10px;margin-top:12px}
+.contact-handle{font-size:15px;color:var(--yellow);font-weight:800}
+.help-page{max-width:960px}
+.faq-list{margin-top:35px;border-top:1px solid var(--line)}
+.faq-list details{border-bottom:1px solid var(--line);padding:20px 0}
+.faq-list summary{cursor:pointer;font:800 20px/1.25 var(--display);letter-spacing:-.025em}
+.faq-list p,.policy-list p{font-size:14px;color:var(--muted);line-height:1.65}
+.policy-list{margin-top:35px}.policy-list article{display:flex;gap:24px;border-top:1px solid var(--line);padding:25px 0}
+.policy-list article>span{font-size:12px;font-weight:800;margin-top:7px}
+.policy-list h2{font:800 26px/1.1 var(--display);letter-spacing:-.035em;margin:0}
+@media(max-width:1050px){.wholesale-layout{grid-template-columns:minmax(0,1fr) 290px;gap:17px}.bulk-row{grid-template-columns:67px minmax(0,1fr);gap:12px;padding:15px}.bulk-heading{flex-direction:column}.bulk-unit small{text-align:left}.bulk-summary{padding:19px}.bulk-quantity-row{align-items:flex-start;gap:9px;flex-wrap:wrap}.product-detail{gap:28px}}
+@media(max-width:800px){.wholesale-layout{grid-template-columns:minmax(0,1fr)}.bulk-summary{position:static}.bulk-heading{flex-direction:row}.bulk-summary .bulk-items{display:grid;grid-template-columns:1fr 1fr;column-gap:20px}.product-detail{gap:22px}.detail-art{min-height:310px}.detail-art svg{min-height:300px}.contact-option{padding:25px}}
+@media(max-width:680px){.nav{height:auto;display:flex;flex-wrap:wrap;padding-top:13px;gap:8px}.nav>.logo{order:1}.nav>.bag{order:2;margin-left:auto}.navlinks{order:3;width:100%;display:flex;justify-content:space-between;gap:13px;font-size:12px;margin-top:4px}.navlinks a{padding-block:10px}.hero-content{min-height:540px;padding-top:28px}.hero-art{height:52%;background-position:78% 61%}.hero::after{background:linear-gradient(180deg,#121212 38%,#121212d9 49%,#12121200 65%,#12121222 86%,#121212 100%)}.hero h1{font-size:clamp(57px,14vw,85px)}.hero-copy{margin:16px 0}.heading{gap:16px}.heading h2{font-size:42px}.page-section{padding-block:21px 40px}.breadcrumb{margin-bottom:23px}.page-title{font-size:clamp(40px,10vw,62px)}.page-intro{font-size:14px;margin-top:16px}.shop-shortcuts{gap:9px}.shop-shortcuts a{padding:17px 13px}.shop-shortcuts a::after{top:15px;right:10px;font-size:20px}.shop-shortcuts span{font-size:8px;max-width:130px}.shop-shortcuts strong{font-size:26px}.catalog-bottom{flex-direction:column;align-items:flex-start;padding:18px}.footer-grid{grid-template-columns:1fr 1fr;row-gap:25px}.footer-grid>div:first-child{grid-column:1/-1}.footer-links{font-size:12px}.footer{padding-bottom:65px}.wholesale-hero{padding-top:21px}.wholesale-steps{gap:12px;font-size:10px}.wholesale-steps b{margin-right:3px;padding:4px}.wholesale-layout{padding-top:20px}.bulk-row{grid-template-columns:56px minmax(0,1fr);gap:10px;padding:12px}.bulk-art{height:90px}.bulk-heading h2{font-size:17px}.bulk-heading{flex-wrap:wrap;gap:6px}.bulk-unit{font-size:15px}.bulk-tiers{gap:3px;margin-block:10px}.bulk-tier{padding:6px 5px;font-size:9px}.bulk-tier strong{font-size:11px}.bulk-summary .bulk-items{grid-template-columns:1fr}.product-detail{grid-template-columns:1fr}.detail-art{min-height:260px}.detail-art svg{min-height:0;height:270px}.detail-info .page-title{font-size:39px}.contact-options{grid-template-columns:1fr;gap:14px}.contact-option{padding:26px}.contact-option h2{font-size:34px}.faq-list summary{font-size:19px}}
+@media(max-width:800px){.bulk-mobilebar{position:fixed;inset:auto 0 0;z-index:3;display:flex;justify-content:space-between;align-items:center;gap:10px;background:var(--yellow);border-top:1px solid #111;padding:12px 16px max(12px,env(safe-area-inset-bottom));box-shadow:0 -4px 20px #0002}.bulk-mobilebar span{display:block;font-size:10px;margin-bottom:2px}.bulk-mobilebar strong{font-size:19px}.bulk-mobilebar .btn{font-size:12px;min-height:42px}[data-page="mayoristas"] .float{bottom:96px}[data-page="mayoristas"] .footer{padding-bottom:120px}}
+
+
 </style>
 </head>
 <body>
@@ -41,31 +133,50 @@ dialog{padding:0;border:0;color:#111;background:#fff;max-height:100dvh}dialog::b
 <div class="top">DEMO PARA FULL BRILLO · PRECIOS Y ENVÍOS DE EJEMPLO</div>
 <header class="masthead">
   <div class="wrap nav">
-    <a class="logo" href="#" aria-label="Full Brillo, inicio"><svg width="24" height="24" style="color:var(--yellow)" aria-hidden="true"><use href="#mark"/></svg> FULL<span>BRILLO</span></a>
-    <nav class="navlinks" aria-label="Menú principal"><a href="#catalogo">Catálogo</a><a href="#mayoristas">Mayoristas</a><a href="https://www.instagram.com/fullbrillo.ar/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></nav>
+    <a class="logo" href="#/" aria-label="Full Brillo, inicio"><svg width="24" height="24" style="color:var(--yellow)" aria-hidden="true"><use href="#mark"/></svg> FULL<span>BRILLO</span></a>
+    <nav class="navlinks" aria-label="Menú principal"><a href="#/" data-nav="inicio">Inicio</a><a href="#/tienda" data-nav="tienda">Tienda</a><a href="#/mayoristas" data-nav="mayoristas">Mayoristas</a><a href="#/contacto" data-nav="contacto">Contacto</a></nav>
     <button class="bag" id="open-cart" type="button" aria-label="Abrir carrito, 0 productos"><svg width="19" height="19" aria-hidden="true"><use href="#bag"/></svg><b class="bag-label">Carrito</b><span id="count">0</span></button>
   </div>
 </header>
-<main>
-  <section class="hero" aria-labelledby="hero-title">
-    <div class="hero-art" aria-hidden="true"></div>
-    <div class="wrap hero-content">
-      <p class="eyebrow">Detailing automotor</p>
-      <h1 id="hero-title">Brillo a<br><em>fondo.</em></h1>
-      <p class="hero-copy">Todo para lavar, limpiar y dar terminación a tu auto. Elegí tus productos o llevate un kit.</p>
-      <div class="actions"><a class="btn" href="#catalogo">Ver productos <svg width="17" height="17" aria-hidden="true"><use href="#arrow"/></svg></a><a class="btn btn-outline" href="#mayoristas">Comprar por mayor</a></div>
-    </div>
-    <span class="hero-index">FULL BRILLO / Línea automotor</span>
-  </section>
-  <section class="benefits" aria-label="Compra y entrega">
-    <div class="wrap">
-      <div class="benefit"><svg width="23" height="23" aria-hidden="true"><use href="#truck"/></svg><div>Envíos a todo el país<small>Cotizá con tu código postal</small></div></div>
-      <div class="benefit"><svg width="23" height="23" aria-hidden="true"><use href="#card"/></svg><div>Pagos online<small>Mercado Pago y transferencia</small></div></div>
-      <div class="benefit"><svg width="23" height="23" aria-hidden="true"><use href="#boxes"/></svg><div>Venta por mayor<small>Precios escalonados por cantidad</small></div></div>
-    </div>
-  </section>
-  <section class="catalog wrap" id="catalogo" aria-labelledby="catalog-title">
-    <div class="heading"><div><p class="eyebrow">Línea FULL BRILLO</p><h2 id="catalog-title">El catálogo</h2></div><p id="product-count" aria-live="polite"></p></div>
+<main id="main">
+  <div data-view="inicio">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-art" aria-hidden="true"></div>
+      <div class="wrap hero-content">
+        <p class="eyebrow">Detailing automotor</p>
+        <h1 id="hero-title" tabindex="-1">Brillo a<br><em>fondo.</em></h1>
+        <p class="hero-copy">Todo para lavar, limpiar y dar terminación a tu auto. Elegí tus productos o llevate un kit.</p>
+        <div class="actions"><a class="btn" href="#/tienda">Ir a la tienda <svg width="17" height="17" aria-hidden="true"><use href="#arrow"/></svg></a><a class="btn btn-outline" href="#/mayoristas">Comprar por mayor</a></div>
+      </div>
+      <span class="hero-index">FULL BRILLO / Línea automotor</span>
+    </section>
+    <section class="benefits" aria-label="Compra y entrega">
+      <div class="wrap">
+        <div class="benefit"><svg width="23" height="23" aria-hidden="true"><use href="#truck"/></svg><div>Envíos a todo el país<small>Cotizá con tu código postal</small></div></div>
+        <div class="benefit"><svg width="23" height="23" aria-hidden="true"><use href="#card"/></svg><div>Pagos online<small>Mercado Pago y transferencia</small></div></div>
+        <div class="benefit"><svg width="23" height="23" aria-hidden="true"><use href="#boxes"/></svg><div>Venta por mayor<small>Precios escalonados por cantidad</small></div></div>
+      </div>
+    </section>
+    <section class="catalog wrap" aria-labelledby="featured-title">
+      <div class="heading"><div><p class="eyebrow">Línea FULL BRILLO</p><h2 id="featured-title">Elegí tu próximo brillo</h2></div><a class="text-link" href="#/tienda">Ver todo el catálogo ↗</a></div>
+      <div class="products" id="featured-products"></div>
+      <div class="shop-shortcuts">
+        <a href="#/tienda/kits"><span>KITS x2 Y x3</span><strong>Tu rutina, en un kit.</strong><span>Ver los kits disponibles ↗</span></a>
+        <a href="#/tienda/lavado"><span>500 ML Y BIDONES DE 4 L</span><strong>Elegí tu formato.</strong><span>Ver la línea de lavado ↗</span></a>
+      </div>
+    </section>
+    <section class="wholesale" aria-labelledby="home-wholesale-title">
+      <div class="wrap wholesale-grid">
+        <div><p class="eyebrow">Talleres, detailers y revendedores</p><h2 id="home-wholesale-title">Comprá por mayor.</h2></div>
+        <div><p>Un catálogo para armar tu pedido por cantidad. Compará escalas, elegí las unidades y revisá el ahorro antes de comprar.</p><a class="btn btn-dark" href="#/mayoristas">Entrar a Mayoristas <svg width="17" height="17" aria-hidden="true"><use href="#arrow"/></svg></a></div>
+      </div>
+    </section>
+  </div>
+
+  <section class="page-section wrap" data-view="tienda" aria-labelledby="shop-title" hidden>
+    <nav class="breadcrumb" aria-label="Ubicación"><a href="#/">Inicio</a><span>/</span><span>Tienda</span></nav>
+    <div class="heading"><div><p class="eyebrow">Línea FULL BRILLO</p><h1 class="page-title" id="shop-title" tabindex="-1">La tienda.</h1></div><p id="product-count" aria-live="polite"></p></div>
+    <p class="page-intro">Productos para el lavado, la limpieza y la terminación. Entrá a cada ficha para elegir la presentación y ver sus detalles.</p>
     <div class="filters" role="group" aria-label="Filtrar productos">
       <button class="filter" type="button" data-filter="todos" aria-pressed="true">Todo</button>
       <button class="filter" type="button" data-filter="lavado" aria-pressed="false">Lavado</button>
@@ -74,23 +185,96 @@ dialog{padding:0;border:0;color:#111;background:#fff;max-height:100dvh}dialog::b
       <button class="filter" type="button" data-filter="kits" aria-pressed="false">Kits</button>
     </div>
     <div class="products" id="products"></div>
+    <a class="catalog-bottom" href="#/mayoristas"><strong>¿Comprás para tu negocio?</strong><span>Conocé el catálogo mayorista y sus precios por cantidad ↗</span></a>
   </section>
-  <section class="wholesale" id="mayoristas" aria-labelledby="wholesale-title">
-    <div class="wrap wholesale-grid">
-      <div><p class="eyebrow">Detailers, talleres y revendedores</p><h2 id="wholesale-title">Mayoristas</h2><p>Armá tu pedido con el precio por cantidad. En esta demo, el tramo se aplica automáticamente al sumar unidades de una misma presentación.</p><a class="btn btn-dark" href="#catalogo">Armar pedido <svg width="17" height="17" aria-hidden="true"><use href="#arrow"/></svg></a></div>
-      <table class="tiers"><caption>ESCALA ILUSTRATIVA · SHAMPOO 500 ML</caption><thead><tr><th scope="col">Cantidad</th><th scope="col">Tramo</th><th scope="col">Precio unitario</th></tr></thead><tbody><tr><td>1 a 5</td><td>Público</td><td>$ 8.900</td></tr><tr><td>6 a 11</td><td>Mayorista · 10% menos</td><td>$ 8.010</td></tr><tr><td>12 o más</td><td>Mayorista · 15% menos</td><td>$ 7.565</td></tr></tbody></table>
+
+  <section class="wholesale-page" data-view="mayoristas" aria-labelledby="wholesale-title" hidden>
+    <div class="wholesale-hero"><div class="wrap">
+      <nav class="breadcrumb" aria-label="Ubicación"><a href="#/">Inicio</a><span>/</span><span>Mayoristas</span></nav>
+      <p class="eyebrow">FULL BRILLO para tu negocio</p>
+      <h1 class="page-title" id="wholesale-title" tabindex="-1">Catálogo mayorista.</h1>
+      <p class="page-intro">Armá tu pedido desde este catálogo. El precio se ajusta según las unidades de cada presentación.</p>
+      <div class="wholesale-steps"><span><b>01</b> Elegí los productos</span><span><b>02</b> Cargá las cantidades</span><span><b>03</b> Revisá tu pedido</span></div>
+    </div></div>
+    <div class="wrap wholesale-layout">
+      <div>
+        <div class="wholesale-rules"><strong>Condiciones de ejemplo</strong><p>Desde 6 unidades de una misma presentación se aplica un 10% de descuento. Desde 12, un 15%. Cada kit cuenta como una unidad. Escalas sujetas a confirmación de FULL BRILLO.</p></div>
+        <div class="bulk-list" id="bulk-products"></div>
+      </div>
+      <aside class="bulk-summary" aria-labelledby="bulk-summary-title">
+        <p class="eyebrow">Tu selección</p><h2 id="bulk-summary-title">Pedido mayorista</h2>
+        <p class="hint">Las cantidades se comparten con tu carrito.</p>
+        <p id="bulk-empty" class="bulk-empty">Elegí las unidades de cada producto para empezar.</p>
+        <ul id="bulk-items" class="bulk-items"></ul>
+        <dl class="totals">
+          <div><dt>Unidades</dt><dd id="bulk-count">0</dd></div>
+          <div><dt>Precio al público</dt><dd id="bulk-public"></dd></div>
+          <div class="saving"><dt>Ahorro por cantidad</dt><dd id="bulk-saving"></dd></div>
+          <div><dt>Total de productos</dt><dd id="bulk-total"></dd></div>
+        </dl>
+        <p class="hint">El envío se calcula en el carrito.</p>
+        <button class="btn checkout" type="button" id="bulk-checkout" disabled>Revisar pedido <svg width="17" height="17" aria-hidden="true"><use href="#arrow"/></svg></button>
+      </aside>
+    </div>
+    <div class="bulk-mobilebar" id="bulk-mobilebar" hidden><div><span id="bulk-mobile-count"></span><strong id="bulk-mobile-total"></strong></div><button type="button" class="btn btn-dark" data-open-cart>Ver mi pedido ↗</button></div>
+  </section>
+
+  <section class="page-section wrap" data-view="producto" aria-labelledby="detail-title" hidden>
+    <nav class="breadcrumb" aria-label="Ubicación"><a href="#/">Inicio</a><span>/</span><a href="#/tienda">Tienda</a><span>/</span><span id="detail-breadcrumb"></span></nav>
+    <div id="product-detail"></div>
+  </section>
+
+  <section class="page-section wrap" data-view="contacto" aria-labelledby="contact-page-title" hidden>
+    <nav class="breadcrumb" aria-label="Ubicación"><a href="#/">Inicio</a><span>/</span><span>Contacto</span></nav>
+    <p class="eyebrow">Hablemos</p><h1 class="page-title" id="contact-page-title" tabindex="-1">Estamos del otro lado.</h1>
+    <p class="page-intro">Consultas sobre productos, pedidos y compras para tu negocio.</p>
+    <div class="contact-options">
+      <div class="contact-option"><svg width="32" height="32" aria-hidden="true"><use href="#chat"/></svg><h2>WhatsApp</h2><p>Escribinos para consultar por un producto o armar tu pedido.</p><button class="btn btn-dark contact-trigger" type="button">Probar una consulta ↗</button><small>Conversación de ejemplo en esta demo.</small></div>
+      <div class="contact-option dark"><span class="contact-handle">@fullbrillo.ar</span><h2>Encontranos en Instagram.</h2><p>El perfil de FULL BRILLO, a un clic.</p><a class="btn" href="https://www.instagram.com/fullbrillo.ar/" target="_blank" rel="noopener noreferrer">Ir a Instagram ↗</a></div>
+    </div>
+    <a class="catalog-bottom" href="#/ayuda"><strong>Antes de comprar</strong><span>Consultá las preguntas frecuentes sobre pagos, envíos y mayoristas ↗</span></a>
+  </section>
+
+  <section class="page-section wrap help-page" data-view="ayuda" aria-labelledby="help-title" hidden>
+    <nav class="breadcrumb" aria-label="Ubicación"><a href="#/">Inicio</a><span>/</span><span>Ayuda</span></nav>
+    <p class="eyebrow">Tu compra, paso a paso</p><h1 class="page-title" id="help-title" tabindex="-1">Preguntas frecuentes.</h1>
+    <div class="faq-list">
+      <details><summary>¿Cómo compro en la tienda?</summary><p>Elegí tus productos, ajustá las cantidades y abrí el carrito. Ingresá un código postal, elegí el medio de pago y continuá con los datos de entrega. Podés completar todo el recorrido con datos de prueba.</p></details>
+      <details><summary>¿Cómo funcionan los precios mayoristas?</summary><p>Entrá a Mayoristas para ver las escalas y armar el pedido. La demo aplica descuentos por cantidad de una misma presentación. Los mínimos y los porcentajes son ilustrativos y se definirán con FULL BRILLO.</p><a class="text-link" href="#/mayoristas">Ir a Mayoristas ↗</a></details>
+      <details><summary>¿Qué medios de pago puedo elegir?</summary><p>Mercado Pago y transferencia bancaria. En esta demo, Mercado Pago termina con un pago de prueba aprobado y la transferencia deja el pedido pendiente de confirmación.</p></details>
+      <details><summary>¿Cómo calculo el envío?</summary><p>Ingresá el código postal en el carrito. La demo muestra una tarifa ilustrativa. En la tienda final se consultará al operador logístico acordado, según su cobertura.</p></details>
+      <details><summary>¿Dónde consulto por un producto o un pedido?</summary><p>Encontrá WhatsApp e Instagram en Contacto. El botón de WhatsApp presenta una conversación de ejemplo mientras se define el número comercial.</p><a class="text-link" href="#/contacto">Ir a Contacto ↗</a></details>
+      <details><summary>¿Dónde puedo ver las condiciones de compra?</summary><p>La demo incluye un espacio para cambios, privacidad y condiciones de compra. Los textos comerciales finales se completarán con FULL BRILLO antes de publicar la tienda definitiva.</p><a class="text-link" href="#/politicas">Ver las políticas de la demo ↗</a></details>
     </div>
   </section>
+
+  <section class="page-section wrap help-page" data-view="politicas" aria-labelledby="policies-title" hidden>
+    <nav class="breadcrumb" aria-label="Ubicación"><a href="#/">Inicio</a><span>/</span><span>Políticas</span></nav>
+    <p class="eyebrow">Información para comprar</p><h1 class="page-title" id="policies-title" tabindex="-1">Políticas de la tienda.</h1>
+    <p class="page-intro">Vista previa de los apartados que acompañarán la tienda. Los textos finales se acordarán con FULL BRILLO antes del lanzamiento.</p>
+    <div class="policy-list">
+      <article><span>01</span><div><h2>Cambios y devoluciones</h2><p>Este apartado incluirá el procedimiento de contacto, los plazos y las condiciones aplicables a los productos.</p><a class="text-link" href="#/contacto">Consultar a FULL BRILLO ↗</a></div></article>
+      <article><span>02</span><div><h2>Privacidad</h2><p>Los datos de entrega se usan en memoria para simular la compra. El carrito se conserva en el almacenamiento local del navegador. La tienda final detallará el tratamiento de los datos y los canales para realizar consultas.</p></div></article>
+      <article><span>03</span><div><h2>Condiciones de compra</h2><p>Los precios, el packaging, los kits, las escalas mayoristas y las tarifas de envío son ejemplos. Los pedidos y pagos se simulan. FULL BRILLO definirá los precios, el stock y las condiciones comerciales de su tienda.</p></div></article>
+    </div>
+  </section>
+
+  <section class="page-section wrap" data-view="no-encontrado" aria-labelledby="missing-title" hidden>
+    <p class="eyebrow">Volvamos al catálogo</p><h1 class="page-title" id="missing-title" tabindex="-1">Página no encontrada.</h1><p class="page-intro">Podés seguir recorriendo los productos de FULL BRILLO.</p><a class="btn btn-dark" href="#/tienda">Ir a la tienda ↗</a>
+  </section>
 </main>
+
 <footer class="footer">
   <div class="wrap">
     <div class="footer-grid">
-      <div><a class="logo" href="#"><svg width="23" height="23" style="color:var(--yellow)" aria-hidden="true"><use href="#mark"/></svg> FULL<span>BRILLO</span></a><p>Productos para detailing automotor.</p></div>
-      <div class="footer-links"><a href="https://www.instagram.com/fullbrillo.ar/" target="_blank" rel="noopener noreferrer">@fullbrillo.ar ↗</a><a href="#contacto" class="contact-trigger">WhatsApp ↗</a></div>
+      <div><a class="logo" href="#/" aria-label="FULL BRILLO, inicio"><svg width="23" height="23" style="color:var(--yellow)" aria-hidden="true"><use href="#mark"/></svg> FULL<span>BRILLO</span></a><p>Productos para detailing automotor.</p></div>
+      <div class="footer-links"><strong class="footer-heading">Tu compra</strong><a href="#/tienda">Tienda</a><a href="#/mayoristas">Mayoristas</a><a href="#/ayuda">Pagos, envíos y preguntas frecuentes</a><a href="#/politicas">Políticas de la tienda</a></div>
+      <div class="footer-links"><strong class="footer-heading">Hablemos</strong><a href="#/contacto">Contacto</a><a href="https://www.instagram.com/fullbrillo.ar/" target="_blank" rel="noopener noreferrer">@fullbrillo.ar ↗</a><a href="#/contacto" class="contact-trigger">WhatsApp ↗</a></div>
     </div>
     <p class="fine">Vista previa para aprobación. Imágenes de packaging, composición de kits, precios, descuentos y tarifas de envío ilustrativos. Pagos simulados.</p>
   </div>
 </footer>
+
 <button class="float contact-trigger" type="button" aria-label="WhatsApp"><svg width="23" height="23" aria-hidden="true"><use href="#chat"/></svg></button>
 <dialog class="drawer" id="cart" aria-labelledby="cart-title">
   <header><h2 id="cart-title">Tu carrito</h2><form method="dialog"><button class="close" aria-label="Cerrar carrito">×</button></form></header>
@@ -232,34 +416,169 @@ function artwork(product) {
   return `<svg viewBox="0 0 240 188" aria-hidden="true"><ellipse cx="123" cy="170" rx="${product.kit ? 85 : 59}" ry="8" fill="#201e14" opacity=".14"/>${packages}</svg>`;
 }
 
+
+function quantityControl(product) {
+  return `<div class="product-qty" data-product="${product.id}" role="group" aria-label="Cantidad de ${product.name}, ${product.size}">
+    <button class="add subtract" type="button" data-step="-1" aria-label="Quitar una unidad de ${product.name}, ${product.size}" hidden>−</button>
+    <output aria-label="Unidades en el carrito" hidden></output>
+    <button class="add" type="button" data-step="1" aria-label="Agregar ${product.name}, ${product.size}">+</button>
+  </div>`;
+}
+
+function productCard(product) {
+  return `<article class="product">
+    <a class="product-art-link" href="#/producto/${product.id}" aria-label="Ver ${product.name}, ${product.size}"><div class="product-art"><span class="size">${product.size}</span>${artwork(product)}</div></a>
+    <div class="product-body"><p class="product-type">${categories[product.category]}</p><h3><a href="#/producto/${product.id}">${product.name}</a></h3>
+    <p class="product-desc">${product.description}</p><a class="product-link" href="#/producto/${product.id}">Ver detalles y presentación ↗</a>
+    <div class="product-buy"><strong>${money(product.price)}</strong>${quantityControl(product)}</div></div>
+  </article>`;
+}
+
 function renderProducts(filter) {
   const visible = products.filter(product => filter === "todos" || product.category === filter);
   byId("product-count").textContent = `${visible.length} ${visible.length === 1 ? "presentación" : "presentaciones"} · precios de muestra`;
-  byId("products").innerHTML = visible.map(product => `<article class="product">
-    <div class="product-art"><span class="size">${product.size}</span>${artwork(product)}</div>
-    <div class="product-body"><p class="product-type">${categories[product.category]}</p><h3>${product.name}</h3><p class="product-desc">${product.description}</p>
-    <div class="product-buy"><strong>${money(product.price)}</strong>
-      <div class="product-qty" data-product="${product.id}" role="group" aria-label="Cantidad de ${product.name}, ${product.size}">
-        <button class="add subtract" type="button" data-step="-1" aria-label="Quitar una unidad de ${product.name}, ${product.size}" hidden>−</button>
-        <output aria-label="Unidades en el carrito" hidden></output>
-        <button class="add" type="button" data-step="1" aria-label="Agregar ${product.name}, ${product.size}">+</button>
-      </div>
-    </div></div>
-  </article>`).join("");
+  byId("products").innerHTML = visible.map(productCard).join("");
+  document.querySelectorAll(".filter").forEach(button => button.setAttribute("aria-pressed", button.dataset.filter === filter));
   syncCatalogQuantities();
 }
 
 function syncCatalogQuantities() {
-  byId("products").querySelectorAll("[data-product]").forEach(control => {
+  document.querySelectorAll(".product-qty").forEach(control => {
     const quantity = cart.get(control.dataset.product) ?? 0;
     const output = control.querySelector("output");
     const inCart = quantity > 0;
     control.classList.toggle("has-quantity", inCart);
     control.querySelector(".subtract").hidden = !inCart;
+    control.querySelector('[data-step="1"]').disabled = quantity >= 999;
     output.hidden = !inCart;
     if (output.textContent !== String(quantity)) output.textContent = quantity;
   });
 }
+
+function renderWholesale() {
+  byId("bulk-products").innerHTML = products.map(product => `<article class="bulk-row" data-bulk="${product.id}">
+    <a class="bulk-art" href="#/producto/${product.id}" aria-label="Ver ${product.name}, ${product.size}">${artwork(product)}</a>
+    <div>
+      <div class="bulk-heading"><div><h2><a href="#/producto/${product.id}">${product.name}</a></h2><p>${product.size} · ${categories[product.category]}</p></div><div class="bulk-unit"><span data-bulk-price></span><small>por unidad</small></div></div>
+      <div class="bulk-tiers" aria-label="Escalas de precios de ejemplo">
+        <div class="bulk-tier" data-tier="0">1 a 5 unidades<strong>${money(product.price)} c/u</strong></div>
+        <div class="bulk-tier" data-tier="10">6 a 11 · −10%<strong>${money(unitPrice(product.id, 6))} c/u</strong></div>
+        <div class="bulk-tier" data-tier="15">12 o más · −15%<strong>${money(unitPrice(product.id, 12))} c/u</strong></div>
+      </div>
+      <div class="bulk-quantity-row"><div data-bulk-progress aria-live="polite"></div><div class="bulk-quantity">
+        <button type="button" data-bulk-step="-1" aria-label="Quitar una unidad de ${product.name}, ${product.size}">−</button>
+        <input type="number" min="0" max="999" step="1" value="0" data-bulk-quantity aria-label="Unidades de ${product.name}, ${product.size}">
+        <button type="button" data-bulk-step="1" aria-label="Sumar una unidad de ${product.name}, ${product.size}">+</button>
+      </div></div>
+    </div>
+  </article>`).join("");
+}
+
+function syncWholesale() {
+  document.querySelectorAll("[data-bulk]").forEach(row => {
+    const id = row.dataset.bulk;
+    const quantity = cart.get(id) ?? 0;
+    const percent = discount(quantity);
+    row.querySelector("[data-bulk-quantity]").value = quantity;
+    row.querySelector("[data-bulk-price]").textContent = money(unitPrice(id, quantity));
+    row.querySelector('[data-bulk-step="-1"]').disabled = quantity === 0;
+    row.querySelector('[data-bulk-step="1"]').disabled = quantity >= 999;
+    row.querySelectorAll("[data-tier]").forEach(tier => {
+      const active = quantity > 0 && Number(tier.dataset.tier) === percent;
+      tier.classList.toggle("active", active);
+      if (active) tier.setAttribute("aria-current", "true");
+      else tier.removeAttribute("aria-current");
+    });
+    let progress = "Desde 6 unidades, accedés al primer tramo.";
+    if (quantity >= 12) progress = "Estás en el mejor tramo de esta demo · −15%.";
+    else if (quantity >= 6) progress = `Tramo mayorista · −10%. Sumá ${12 - quantity} para llegar al −15%.`;
+    else if (quantity > 0) progress = `Sumá ${6 - quantity} para acceder al precio mayorista.`;
+    row.querySelector("[data-bulk-progress]").textContent = progress;
+  });
+  let units = 0;
+  let publicTotal = 0;
+  let total = 0;
+  const items = [...cart].map(([id, quantity]) => {
+    const product = find(id);
+    const lineTotal = unitPrice(id, quantity) * quantity;
+    units += quantity;
+    publicTotal += product.price * quantity;
+    total += lineTotal;
+    return `<li><span>${quantity} × ${product.name}<small>${product.size}</small></span><strong>${money(lineTotal)}</strong></li>`;
+  });
+  byId("bulk-items").innerHTML = items.join("");
+  byId("bulk-empty").hidden = cart.size > 0;
+  byId("bulk-count").textContent = units;
+  byId("bulk-public").textContent = money(publicTotal);
+  byId("bulk-saving").textContent = money(publicTotal - total);
+  byId("bulk-total").textContent = money(total);
+  byId("bulk-checkout").disabled = cart.size === 0;
+  byId("bulk-mobilebar").hidden = cart.size === 0;
+  byId("bulk-mobile-count").textContent = `${units} ${units === 1 ? "unidad" : "unidades"} · envío a calcular`;
+  byId("bulk-mobile-total").textContent = money(total);
+}
+
+function renderProductDetail(product) {
+  const variants = products.filter(item => item.name === product.name);
+  const descriptions = {
+    lavado: "Shampoo pH neutro con cera para el lavado exterior. Elegí entre el envase de 500 ml y el bidón de 4 L.",
+    limpieza: "APC limpiador multiuso. Disponible en presentación de 500 ml y bidón de 4 L.",
+    terminacion: "Silicona para cubiertas y plásticos, en presentación de 500 ml.",
+    kits: `Un kit con ${product.kit?.length ?? 0} productos de la línea FULL BRILLO. La composición que ves es un ejemplo para esta demo.`
+  };
+  byId("detail-breadcrumb").textContent = `${product.name} · ${product.size}`;
+  const variantsMarkup = variants.map(item => `<a href="#/producto/${item.id}"${item.id === product.id ? ' aria-current="true"' : ""}>${item.size}</a>`).join("");
+  const contents = product.kit ? `<div><dt>Incluye</dt><dd>${product.kit.length} envases de 500 ml</dd></div>` : "";
+  byId("product-detail").innerHTML = `<div class="product-detail">
+    <div class="detail-art">${artwork(product)}</div>
+    <div class="detail-info">
+      <p class="eyebrow">${categories[product.category]}</p><h1 class="page-title" id="detail-title" tabindex="-1">${product.name}</h1>
+      <p class="page-intro">${descriptions[product.category]}</p>
+      <p class="variant-label">Presentación</p><div class="variant-options" role="group" aria-label="Elegir presentación">${variantsMarkup}</div>
+      <div class="detail-price"><strong>${money(product.price)}</strong>${quantityControl(product)}</div>
+      <p class="hint">Precio al público de ejemplo. Los descuentos por cantidad se aplican en el carrito.</p>
+      <dl class="detail-facts"><div><dt>Formato</dt><dd>${product.size}</dd></div><div><dt>Línea</dt><dd>${categories[product.category]}</dd></div>${contents}</dl>
+      <a class="text-link" href="#/mayoristas">Ver escalas y armar un pedido mayorista ↗</a>
+      <div class="detail-actions"><button type="button" class="btn btn-dark" data-open-cart>Ver mi carrito <svg width="17" height="17" aria-hidden="true"><use href="#bag"/></svg></button><a class="text-link" href="#/tienda">Seguir en la tienda</a></div>
+    </div>
+  </div>`;
+  syncCatalogQuantities();
+}
+
+function openCart() {
+  showStep("cart-step");
+  byId("cart").showModal();
+}
+
+function renderRoute() {
+  const legacy = {catalogo:"tienda", mayoristas:"mayoristas", contacto:"contacto"};
+  const parts = location.hash.replace(/^#\/?/, "").split("/");
+  let page = parts[0] || "inicio";
+  page = legacy[page] ?? page;
+  const titles = {inicio:"Inicio", tienda:"Tienda", mayoristas:"Mayoristas", producto:"Producto", contacto:"Contacto", ayuda:"Ayuda", politicas:"Políticas"};
+  if (!titles[page]) page = "no-encontrado";
+  if (page === "producto") {
+    const product = find(parts[1]);
+    if (product) renderProductDetail(product);
+    else page = "no-encontrado";
+  }
+  if (page === "tienda") {
+    const filter = Object.hasOwn(categories, parts[1]) ? parts[1] : "todos";
+    renderProducts(filter);
+  }
+  document.querySelectorAll("[data-view]").forEach(view => { view.hidden = view.dataset.view !== page; });
+  const navPage = page === "producto" ? "tienda" : page;
+  document.querySelectorAll("[data-nav]").forEach(link => {
+    if (link.dataset.nav === navPage) link.setAttribute("aria-current", "page");
+    else link.removeAttribute("aria-current");
+  });
+  const current = document.querySelector(`[data-view="${page}"]`);
+  document.body.dataset.page = page;
+  document.title = `${titles[page] ?? "Página no encontrada"} | FULL BRILLO`;
+  window.scrollTo({top:0, behavior:"instant"});
+  current.querySelector("h1").focus({preventScroll:true});
+}
+
 
 function discount(quantity) {
   return quantity >= 12 ? 15 : quantity >= 6 ? 10 : 0;
@@ -275,6 +594,7 @@ function renderTotals() {
   byId("shipping-price").textContent = shipping === null ? "A calcular" : money(shipping);
   byId("total").textContent = money(subtotal + (shipping ?? 0));
   byId("submit-order").disabled = shipping === null || cart.size === 0;
+  syncWholesale();
 }
 
 function renderCart() {
@@ -307,19 +627,35 @@ function resetQuote() {
   renderTotals();
 }
 
+
 document.querySelector(".filters").addEventListener("click", event => {
   const button = event.target.closest("[data-filter]");
   if (!button) return;
-  document.querySelectorAll(".filter").forEach(filter => filter.setAttribute("aria-pressed", filter === button));
-  renderProducts(button.dataset.filter);
+  location.hash = button.dataset.filter === "todos" ? "/tienda" : `/tienda/${button.dataset.filter}`;
 });
-byId("products").addEventListener("click", event => {
-  const button = event.target.closest("[data-step]");
+byId("main").addEventListener("click", event => {
+  const button = event.target.closest("button");
   if (!button) return;
-  const control = button.closest("[data-product]");
-  changeQuantity(control.dataset.product, Number(button.dataset.step));
-  if (button.hidden) control.querySelector('[data-step="1"]').focus({preventScroll:true});
+  const control = button.closest(".product-qty");
+  if (control) {
+    changeQuantity(control.dataset.product, Number(button.dataset.step));
+    if (button.hidden) control.querySelector('[data-step="1"]').focus({preventScroll:true});
+    return;
+  }
+  if (button.hasAttribute("data-bulk-step")) {
+    changeQuantity(button.closest("[data-bulk]").dataset.bulk, Number(button.dataset.bulkStep));
+    return;
+  }
+  if (button.hasAttribute("data-open-cart")) openCart();
 });
+byId("bulk-products").addEventListener("change", event => {
+  if (!event.target.matches("[data-bulk-quantity]")) return;
+  const id = event.target.closest("[data-bulk]").dataset.bulk;
+  const value = Number(event.target.value);
+  const quantity = Number.isFinite(value) ? Math.max(0, Math.min(Math.trunc(value), 999)) : 0;
+  changeQuantity(id, quantity - (cart.get(id) ?? 0));
+});
+byId("bulk-checkout").addEventListener("click", openCart);
 byId("cart-list").addEventListener("click", event => {
   const button = event.target.closest("[data-step]");
   if (!button) return;
@@ -327,10 +663,7 @@ byId("cart-list").addEventListener("click", event => {
   changeQuantity(id, Number(step));
   (byId("cart-list").querySelector(`[data-id="${id}"][data-step="${step}"]`) ?? byId("cart").querySelector(".close")).focus();
 });
-byId("open-cart").addEventListener("click", () => {
-  showStep("cart-step");
-  byId("cart").showModal();
-});
+byId("open-cart").addEventListener("click", openCart);
 byId("postal").addEventListener("input", () => {
   resetQuote();
   byId("shipping-status").classList.remove("error");
@@ -404,8 +737,8 @@ byId("delivery-form").addEventListener("submit", event => {
 });
 byId("back-catalog").addEventListener("click", () => {
   byId("cart").close();
-  byId("catalogo").scrollIntoView();
-  document.querySelector(".filter").focus({preventScroll:true});
+  if (location.hash === "#/tienda") byId("shop-title").focus();
+  else location.hash = "/tienda";
 });
 document.querySelectorAll(".contact-trigger").forEach(trigger => {
   trigger.addEventListener("click", event => {
@@ -418,8 +751,11 @@ byId("simulate-contact").addEventListener("click", () => { byId("contact-status"
 document.querySelectorAll("dialog").forEach(dialog => {
   dialog.addEventListener("click", event => { if (event.target === dialog) dialog.close(); });
 });
-renderProducts("todos");
+byId("featured-products").innerHTML = ["shampoo500", "silicona", "apc500", "kit3"].map(id => productCard(find(id))).join("");
+renderWholesale();
 renderCart();
+window.addEventListener("hashchange", renderRoute);
+renderRoute();
 </script>
 </body>
 </html>

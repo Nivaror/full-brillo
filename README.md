@@ -1,6 +1,8 @@
 # FULL BRILLO
 
-Demo de la tienda de detailing automotor. Abrí `index.html` en un navegador. Funciona con el archivo descargado y no requiere instalación ni un servidor.
+Demo de la tienda de detailing automotor con páginas de Inicio, Tienda, Mayoristas, Producto, Contacto, Ayuda y Políticas. La navegación usa rutas como `#/tienda` y `#/mayoristas` para permitir abrir y compartir cada vista.
+
+Abrí `index.html` en un navegador. Funciona con el archivo descargado y no requiere instalación ni un servidor.
 
 ## Recorrido de prueba
 
